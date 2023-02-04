@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    border: 10px solid orangered;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+.hdd{
+    height: 75px;
+}
+marquee{
+    color: red;
+    font-size: 62px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media(min-width:750px) {
+.contAINER{
+    display: grid;
+    
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd sd sd main main main main"
+    "ft ft ft ft ft ft ft ft";
+    grid-gap: 5px;   
+}
+}
+#box{
+    border: 4px;
+    padding: 40px;
+    border: 2PX SOLID black;
+}
+.box1{
+    grid-area: hd; 
+    background-image: url(images/logoweb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box1 > ul > li {
+    list-style-type: none;
+    
+}
+.box1 > ul > li > a{
+    text-decoration: none;
+    float: left;
+    align-items: center;
+    font-size: 32px;
+    padding-right: 15px;
+    padding: 10px;
+    margin-right: 32px;
+    
+}
+.box1 > ul > li > a:hover{
+    border: 3px solid greenyellow;
+}
+#search{
+    padding: 1em;
+    justify-content: right;
+}
+.box2{
+    grid-area: sd;
+    
+}
+.cat{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.category{
+    border: 4px solid blue;
+}
+.cat{
+    margin: 15px;
+}
+.cat > li{
+    margin: 20px;
+    list-style-type: none;
+}
+.cat > li > a{
+    text-decoration: none;
+}
+.cat > li > a:hover{
+    border-bottom: 5px solid red;
+}
+.box3{
+    grid-area: main;
+    
+}
+.img-container{
+    display: flex;
+    border: 2px burlywood solid ;
+
+}
+.img-container > img{
+    flex-direction:column;
+}
+.box4{
+    grid-area: ft;
+    height: 400px;
+}
+
